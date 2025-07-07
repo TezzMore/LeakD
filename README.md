@@ -101,16 +101,17 @@ The application will open in your browser at `http://localhost:8501`
 ## 📁 Project Structure
 
 LeakD/
-├── water_leak_app.py # Main Streamlit application
-├── mixed_model_2906_2012.pth # Pre-trained model weights
-├── requirements.txt # Python dependencies
+├── water_leak_app.py              # Main Streamlit application
+├── mixed_model_2906_2012.pth      # Pre-trained model weights
+├── requirements.txt               # Python dependencies
 ├── model/
-│ └── GGNN.py # Graph Neural Network architecture
-├── Sample test datasets/ # Example water network datasets
-│ ├── dist-x1-seed535-1900d-10min/
-│ ├── dist-x2-seed11-1900d-10min/
-│ └── dist-x2-seed33-1900d-10min/
-└── README.md # Project documentation
+│   └── GGNN.py                   # Graph Neural Network architecture
+├── Sample test datasets/          # Example water network datasets
+│   ├── dist-x1-seed535-1900d-10min/
+│   ├── dist-x2-seed11-1900d-10min/
+│   └── dist-x2-seed33-1900d-10min/
+└── README.md                     # Project documentation
+
 
 ## 🧠 Model Architecture
 
