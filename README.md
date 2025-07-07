@@ -60,13 +60,11 @@ Upload your water network dataset and get instant leak predictions with confiden
 git clone https://github.com/TezzMore/LeakD.git
 cd LeakD
 
-text
 
 ### Install Dependencies
 
 pip install -r requirements.txt
 
-text
 
 ### Required Packages
 
@@ -78,7 +76,6 @@ matplotlib
 seaborn
 plotly
 
-text
 
 ## 🚦 Quick Start
 
@@ -86,7 +83,6 @@ text
 
 streamlit run water_leak_app.py
 
-text
 
 The application will open in your browser at `http://localhost:8501`
 
@@ -116,8 +112,6 @@ LeakD/
 │ └── dist-x2-seed33-1900d-10min/
 └── README.md # Project documentation
 
-text
-
 ## 🧠 Model Architecture
 
 ### Graph Neural Network (GGNN)
@@ -133,12 +127,8 @@ text
 Traditional approach:
 Train on Network A → Test on Network A (unrealistic)
 
-text
-
 Our approach:
 Train on Networks 1-8 → Test on Networks 9-11 (realistic)
-
-text
 
 This enables the model to learn **universal leak patterns** rather than network-specific quirks.
 
@@ -169,8 +159,6 @@ adjacency = torch.load('adj_matrices.pt')
 Predict leak location
 predictions = model.predict(dataset, adjacency)
 print(f"Leak detected at Node {predictions.location} with {predictions.confidence:.1f}% confidence")
-
-text
 
 ### Web Application Features
 
@@ -218,8 +206,6 @@ text
 ### Example Output
 Leak detected at Node 15 with 97.3% confidence
 
-text
-
 ## 🤝 Contributing
 
 We welcome contributions! Please feel free to submit issues, feature requests, or pull requests.
@@ -259,8 +245,6 @@ author={TezzMore},
 year={2025},
 url={https://github.com/TezzMore/LeakD}
 }
-
-text
 
 ---
 
